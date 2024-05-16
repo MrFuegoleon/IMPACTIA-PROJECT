@@ -7,15 +7,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
-# Identifiants de connexion
-email = ""
-password = ""
+email = "doumbiaablo000@gmail.com"
+password = "ALLAHOUAKBAR00"
 
 # URL de la page LinkedIn de connexion
 login_url = "https://www.linkedin.com/login"
 
 # URL de la page à scraper après la connexion
-url_to_scrape = "https://www.linkedin.com/company/marjane-group/about/"
+url_1="https://starngage.com/plus/en-us/influencer/ranking/instagram/morocco"
+url_to_scrape = url_1
 
 # Configuration du navigateur
 options = Options()
@@ -69,10 +69,10 @@ informations_supplementaires = informations_supplementaire.find_all("dd", class_
 for info in informations_supplementaires:
     terme = info.find("dt", class_="mb1 text-heading-medium")
     valeur= info.text.strip()
-    print(f"{terme}: {valeur}")
+    print(valeur)
 
 # Enregistrer le contenu dans un fichier
-with open("recette.html", "w", encoding="utf-8") as f:
+with open("contenu.html", "w", encoding="utf-8") as f:
     f.write(html)
 
 print("Page enregistrée avec succès.")
