@@ -168,7 +168,7 @@ for idx, score in similarity_scores[:N]:
     print(f"Indice : {idx}, Similarité : {score:.2f}")
     print("Détails de l'entrée :")
     print("---------------------")
-    print(f"Nom de l'entreprise : {NEW_DATA.iloc[idx]['name']}")
+    print(f"Nom de l'influenceur : {NEW_DATA.iloc[idx]['name']}")
     print(f"Followers : {NEW_DATA.iloc[idx]['followers']}")
     print(f"Taux d'engagement (ER) : {NEW_DATA.iloc[idx]['er']}")
     print(f"Pays : {NEW_DATA.iloc[idx]['country']}")
